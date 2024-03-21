@@ -28,6 +28,12 @@ li {
     list-style-type: none;
 }
 
+:root {
+    --bg-color: #1f242d;
+    --main-color: #a21caf;
+  }
+  
+
 /* Navbar - Start */
 header {
     background: rgba(116, 105, 182, 0.5);
@@ -123,6 +129,7 @@ header {
     height: 0px;
     background: rgba(225, 175, 209, 0.2);
     border-radius: 20px;
+    transition: all 0.2s;
 }
 
 .dropdownMenu .signUpButton {
@@ -182,3 +189,71 @@ header {
 }
 
 /* Navbar - End */
+
+/* Section - Start */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFE6E6;
+    width: 70%;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .home-content h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .home-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .social-links a {
+    margin: 3rem 1.5rem;
+    font-size: 4rem;
+  }
+  
+  .social-links a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    background-clip: text;
+    text-shadow: 0 0 1rem var(--main-color);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  /* Home Media  */
+@media (max-width: 768px) {
+
+    .home-content h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      
+      .home-content h1 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      
+      .home-content p {
+        font-size: 1rem;
+      }
+      
+      .social-links a {
+        font-size: 3rem;
+      }
+
+}
+/* Section - End */
